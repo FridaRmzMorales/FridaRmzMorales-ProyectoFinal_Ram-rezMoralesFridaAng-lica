@@ -1,0 +1,203 @@
+//Proyecto realizado por Ramírez Morales Frida Angélica
+Proceso Proyecto
+	Escribir "Bienvenido a nuestra papelería. ¿Cuál es tu nombre?"
+	Leer nombre
+	Repetir
+		Escribir "Hola ",nombre
+		Escribir "Tenemos los siguientes productos"
+		Escribir "1) Acuarelas"
+		Escribir "2) Bolígrafos"
+		Escribir "3) Cuadernos"
+		Escribir "4) Cartulinas"
+		Escribir "Si deseas salir, presiona 5"
+		Escribir "¿Qué deseas comprar?: "
+		Leer op
+		Segun op Hacer
+			1:
+				Escribir "Acuarelas"
+				Escribir "1) Acuarela Bombin 12 Pz  $11.00"	
+				Escribir "2) Acuarela Makyco 5 Pz   $8.00"
+				Escribir "3) Acuarela Vinci 6 Pz    $8.00"
+				Escribir "¿Deseas comprar alguno de estos productos?"
+				Escribir "1) Si 2) No"
+				leer comprar
+				Si comprar=1 Entonces
+					Escribir "Según el menú anterior. ¿Qué producto deseas?: "
+					Leer producto
+					Segun producto Hacer
+						1:
+							Escribir "¿Cuántas piezas de Acuarela Bombin 12 Pz necesitas?: "	
+							Leer p
+							c<-p*11
+							Escribir "Adquiriste ",p " piezas de Acuarela Bombin. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						2:
+							Escribir "¿Cuántas piezas de Acuarela Makyco 5 Pz necesitas?: "
+							Leer p
+							c<-p*8
+							Escribir "Adquiriste ",p " piezas de Acuarela Makyco 5 Pz. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						3:
+							Escribir "¿Cuántas piezas de Acuarela Vinci 6 Pz necesitas?: "
+							Leer p
+							c<-p*8
+							Escribir "Adquiriste ",p " piezas de Acuarela Vinci 6 Pz. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						De Otro Modo:
+							Escribir "Opción inválida. Por favor inténtalo de nuevo"
+					FinSegun
+				Sino
+					Escribir "Gracias por tu preferencia ",nombre " Vuelve pronto :)"
+				FinSi
+			2:
+				Escribir "Bolígrafos"
+				Escribir "1) Bolígrafo Bic Negro P/Fino $3.20"		
+				Escribir "2) Bolígrafo Bic Negro P/Mediano $2.30"
+				Escribir "3) Bolígrafo Bic Azul P/Fino $3.20"
+				Escribir "4) Bolígrafo Bic Azul P/Mediano $2.30"		
+				Escribir "5) Bolígrafo Bic Rojo P/Fino $2.30"
+				Escribir "6) Bolígrafo Bic Rojo P/Mediano $3.20"
+				Escribir "¿Deseas comprar alguno de estos productos?"
+				Escribir "1) Si 2) No"
+				leer comprar
+				Si comprar=1 Entonces
+					Escribir "Según el menú anterior. ¿Qué producto deseas?: "
+					Leer producto
+					Segun producto Hacer
+						1:
+							Escribir "¿Cuántas piezas de Bolígrafo Bic Negro P/Fino necesitas?: "
+							Leer p
+							c<-p*3.20
+							Escribir "Adquiriste ",p " piezas de Bolígrafo Bic Negro P/Fino. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						2:
+							Escribir "¿Cuántas piezas de Bolígrafo Bic Negro P/Mediano necesitas?: "
+							Leer p
+							c<-p*2.30
+							Escribir "Adquiriste ",p " piezas de Bolígrafo Bic Negro P/Mediano. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						3:
+							Escribir "¿Cuántas piezas de Bolígrafo Bic Azul P/Fino necesitas?: "
+							Leer p
+							c<-p*3.20
+							Escribir "Adquiriste ",p " piezas de Bolígrafo Bic Azul P/Fino. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						4:
+							Escribir "¿Cuántas piezas de Bolígrafo Bic Azul P/Mediano necesitas?: "	
+							Leer p
+							c<-p*2.30
+							Escribir "Adquiriste ",p " piezas de Bolígrafo Azul P/Mediano. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						5:
+							Escribir "¿Cuántas piezas de Bolígrafo Bic Rojo P/Fino necesitas?: "
+							Leer p
+							c<-p*3.20
+							Escribir "Adquiriste ",p " piezas de Bolígrafo Bic Rojo P/Fino. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						6:
+							Escribir "¿Cuántas piezas de Bolígrafo Bic Rojo P/Mediano necesitas?: "	
+							Leer p;	
+							c<-p*2.30
+							Escribir "Adquiriste ",p " piezas de Bolígrafo Bic Rojo P/Mediano. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						De Otro Modo:
+							Escribir "Opción inválida. Por favor inténtalo de nuevo"
+					FinSegun
+				Sino
+					Escribir "Gracias por tu preferencia ",nombre " Vuelve pronto :)"
+				FinSi
+			3:
+				Escribir "Cuadernos"
+				Escribir "1) Cuaderno Profesional Cuadro Grande Escribe $9.90"		
+				Escribir "2) Cuaderno Profesional Cuadro Chico Monky $8.10"
+				Escribir "3) Cuaderno Francés Raya Scribe $16.70"
+				Escribir "4) Cuaderno Marquilla de 50 Hojas $37.40"		
+				Escribir "¿Deseas comprar alguno de estos productos?"
+				Escribir "1) Si 2) No"
+				leer comprar
+				Si comprar=1 Entonces
+					Escribir "Según el menú anterior. ¿Qué producto deseas?: "
+					Leer producto
+					Segun producto Hacer
+						1:
+							Escribir "¿Cuántas piezas de Cuaderno Profesional Cuadro Grande Escribe necesitas?: "
+							Leer p
+							c<-p*9.90
+							Escribir "Adquiriste ",p " piezas de Cuaderno Profesional Cuadro Grande Escribe. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						2:
+							Escribir "¿Cuántas piezas de Cuaderno Profesional Cuadro Chico Monky necesitas?: "
+							Leer p
+							c<-p*8.10
+							Escribir "Adquiriste ",p " piezas de Cuaderno Profesional Cuadro Chico Monky. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						3:
+							Escribir "¿Cuántas piezas de Cuaderno Francés Raya Scribe necesitas?: "	
+							Leer p
+							c<-p*16.70
+							Escribir "Adquiriste ",p " piezas de Cuaderno Francés Raya Scribe. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						4:
+							Escribir "¿Cuántas piezas de Cuaderno Marquilla de 50 Hojas necesitas?: "
+							Leer p
+							c<-p*37.40
+							Escribir "Adquiriste ",p " piezas de Cuaderno Marquilla de 50 Hojas. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						De Otro Modo:
+							Escribir "Opción inválida. Por favor inténtalo de nuevo"
+					FinSegun
+				Sino
+					Escribir "Gracias por tu preferencia ",nombre " Vuelve pronto :)"
+				FinSi
+			4:
+				Escribir "Cartulinas"
+				Escribir "1) Cartulina blanca $2.50"		
+				Escribir "2) Cartulina negra $4.00"
+				Escribir "3) Cartulina morada $4.00"
+				Escribir "4) Cartulina azul $4.00"	
+				Escribir "¿Deseas comprar alguno de estos productos?"
+				Escribir "1) Si 2) No"
+				leer comprar
+				Si comprar=1 Entonces
+					Escribir "Según el menú anterior. ¿Qué producto deseas?: "
+					Leer producto
+					Segun producto Hacer
+						1:
+							Escribir "¿Cuántas piezas de Cartulina blanca necesitas?: "
+							Leer p
+							c<-p*2.50
+							Escribir "Adquiriste ",p " piezas de Cartulina blanca. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						2:
+							Escribir "¿Cuántas piezas de Cartulina negra necesitas?: "
+							Leer p
+							c<-p*4.00
+							Escribir "Adquiriste ",p " piezas de Cartulina negra. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						3:
+							Escribir "¿Cuántas piezas de Cartulina morada necesitas?: "
+							Leer p
+							c<-p*4.00
+							Escribir "Adquiriste ",p " piezas de Cartulina morada. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						4:
+							Escribir "¿Cuántas piezas de Cartulina azul necesitas?: "
+							Leer p
+							c<-p*4.00
+							Escribir "Adquiriste ",p " piezas de Cartulina azul. El total a pagar es $",c
+							Escribir "Gracias por tu compra ",nombre
+						De Otro Modo:
+							Escribir "Opción inválida. Por favor inténtalo de nuevo"
+							
+					FinSegun
+				Sino
+					Escribir "Gracias por tu preferencia ",nombre " Vuelve pronto :)"
+				FinSi
+			5:
+				Escribir "Gracias por tu preferencia ",nombre " Vuelve pronto :)"
+				
+			De Otro Modo:
+			Escribir "Opción inválida. Por favor inténtalo de nuevo"
+	FinSegun
+	Hasta Que op=5
+FinProceso
